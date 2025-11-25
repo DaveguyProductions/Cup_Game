@@ -49,7 +49,7 @@ func _on_play_button_pressed() -> void:
 	$Audio/ButtonClick.play()
 	hide_menu()
 	show_diff()
-	screen += 1
+	screen = 1
 
 # -------SETTINGS BUTTON LOGIC-------
 func _on_settings_button_mouse_entered() -> void:
@@ -66,6 +66,7 @@ func _on_settings_button_pressed() -> void:
 	$BackButton.visible = true
 	$QuitButton.visible = false
 	$CupsRedMenu.visible = false
+	screen = 3
 
 # -------QUIT BUTTON LOGIC-------
 func _on_quit_button_mouse_entered() -> void:
@@ -89,10 +90,7 @@ func _on_easy_button_mouse_exited() -> void:
 
 func _on_easy_button_pressed() -> void:
 	difficulty = 1
-	screen = 2
-	hide_diff()
-	show_rounds()
-	$Audio/ButtonClick.play()
+	to_diff_screen()
 
 # -------NORMAL BUTTON SETTINGS -------
 func _on_normal_button_mouse_entered() -> void:
@@ -104,10 +102,7 @@ func _on_normal_button_mouse_exited() -> void:
 	
 func _on_normal_button_pressed() -> void:
 	difficulty = 2
-	screen = 2
-	hide_diff()
-	show_rounds()
-	$Audio/ButtonClick.play()
+	to_diff_screen()
 
 # -------HARD BUTTON SETTINGS -------
 func _on_hard_button_mouse_entered() -> void:
@@ -119,10 +114,7 @@ func _on_hard_button_mouse_exited() -> void:
 	
 func _on_hard_button_pressed() -> void:
 	difficulty = 3
-	screen = 2
-	hide_diff()
-	show_rounds()
-	$Audio/ButtonClick.play()
+	to_diff_screen()
 
 # -------BACK BUTTON LOGIC-------
 func _on_back_button_mouse_entered() -> void:
@@ -142,11 +134,20 @@ func _on_back_button_pressed() -> void:
 	if diff_hidden == false:
 		hide_diff()
 	
+	# Back to difficuly from rounds 
+	if screen == 2:
+		screen = 1
+		hide_rounds()
+		show_diff()
+		$CupsRedMenu.visible = true
+		
+	
+	
 # -------ROUND ONE BUTTON LOGIC-------
 func _on_round_1_button_mouse_entered() -> void:
 	$Round_Buttons/Round1Button.icon = ResourceLoader.load("res://Assets/Art/Menu/Rounds/One_Round_B2.png")
 	$Audio/ButtonHover.play()
-	rounds = 1
+	
 
 func _on_round_1_button_mouse_exited() -> void:
 	$Round_Buttons/Round1Button.icon = ResourceLoader.load("res://Assets/Art/Menu/Rounds/One_Round_B1.png")
@@ -171,6 +172,8 @@ func _on_round_1_button_mouse_exited() -> void:
 
 
 # ------- FUNCTIONS -------
+
+# ------- TRANSITION FUNCTIONS -------
 func _on_canvas_layer_transition() -> void:
 	$DaveGuyProductionsSs.visible = false
 	$CanvasLayer/ColorRect.visible = false
@@ -185,6 +188,7 @@ func _input(event):
 		$Audio/DaveGuyFanfare2.stop()
 		menu_passed = true
 
+#------- BUTTON VISIBILITY FUNCTIONS -------
 func show_rounds():
 	$Round_Buttons/Round1Button.visible = true
 	$Round_Buttons/Round2Button.visible = true
@@ -235,3 +239,10 @@ func hide_menu():
 	$SettingsButton.visible = false
 	$QuitButton.visible = false
 	$BackButton.visible = true
+	
+func to_diff_screen():
+	screen = 2
+	hide_diff()
+	show_rounds()
+	$CupsRedMenu.visible = false
+	$Audio/ButtonClick.play()
