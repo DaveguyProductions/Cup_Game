@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://dhhyc3whq5pjx"]
+[gd_scene load_steps=46 format=3 uid="uid://dhhyc3whq5pjx"]
 
 [ext_resource type="Script" uid="uid://b2exxu8qwx6co" path="res://Scripts/Menu/main_menu.gd" id="1_8e205"]
 [ext_resource type="Texture2D" uid="uid://3igggitd266u" path="res://Assets/Art/DaveGuy/DaveGuyProductionsSS.png" id="1_tt5f1"]
@@ -21,8 +21,13 @@
 [ext_resource type="Texture2D" uid="uid://v7xy82y2y0v0" path="res://Assets/Art/Menu/Rounds/Four_Round_B1.png" id="14_65hh5"]
 [ext_resource type="PackedScene" uid="uid://crvrmbw6px4qi" path="res://Scenes/Transition.tscn" id="14_7467j"]
 [ext_resource type="Texture2D" uid="uid://41nygb5rl8lb" path="res://Assets/Art/Menu/Non-Rounds/Easy_B1.png" id="16_6byu3"]
+[ext_resource type="Texture2D" uid="uid://d2fgd1gxxnvrd" path="res://Assets/Art/Menu/Rounds/Six_Round_B1.png" id="16_leunp"]
+[ext_resource type="Texture2D" uid="uid://2j4lruxfdduv" path="res://Assets/Art/Menu/Rounds/Seven_Round_B1.png" id="17_5hdia"]
 [ext_resource type="Texture2D" uid="uid://d2h4eymeqmtpa" path="res://Assets/Art/Menu/Non-Rounds/Normal_B1.png" id="17_leunp"]
 [ext_resource type="Texture2D" uid="uid://d3q451wtnabl2" path="res://Assets/Art/Menu/Non-Rounds/Hard_B1.png" id="18_h1v62"]
+[ext_resource type="Texture2D" uid="uid://shlry7rsvkb2" path="res://Assets/Art/Menu/Rounds/Eight_Round_B1.png" id="18_iqn0u"]
+[ext_resource type="Texture2D" uid="uid://pwfjsbaxqfxp" path="res://Assets/Art/Menu/Rounds/Nine_Round_B1.png" id="19_iqn0u"]
+[ext_resource type="Texture2D" uid="uid://8v7su0gy4me7" path="res://Assets/Art/Menu/Rounds/Unlimited_Round_B1.png" id="20_3u44c"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_riqfo"]
 
@@ -41,6 +46,16 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h1v62"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7v4os"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bxv1r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ux20s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ke15f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_311ux"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pnils"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5hdia"]
 
@@ -87,17 +102,17 @@ offset_top = 100.0
 offset_right = 112.0
 offset_bottom = 116.0
 scale = Vector2(1.4, 1.4)
-theme_override_styles/normal = SubResource("StyleBoxEmpty_riqfo")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_riqfo")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_riqfo")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_riqfo")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_riqfo")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_riqfo")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_riqfo")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_riqfo")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_riqfo")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_riqfo")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_riqfo")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_riqfo")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_riqfo")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_riqfo")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_riqfo")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_riqfo")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_riqfo")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_riqfo")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_riqfo")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_riqfo")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_riqfo")
 icon = ExtResource("14_8e205")
 
 [node name="SettingsButton" type="Button" parent="."]
@@ -113,17 +128,17 @@ offset_top = 100.0
 offset_right = 256.0
 offset_bottom = 116.0
 scale = Vector2(1.4, 1.4)
-theme_override_styles/normal = SubResource("StyleBoxEmpty_fh7cp")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_fh7cp")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_fh7cp")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_fh7cp")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_fh7cp")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_fh7cp")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_fh7cp")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_fh7cp")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_fh7cp")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_fh7cp")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_fh7cp")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_fh7cp")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_fh7cp")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_fh7cp")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_fh7cp")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_fh7cp")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_fh7cp")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_fh7cp")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fh7cp")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_fh7cp")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_fh7cp")
 icon = ExtResource("8_rrcx7")
 
 [node name="QuitButton" type="Button" parent="."]
@@ -139,17 +154,17 @@ offset_top = 100.0
 offset_right = 407.0
 offset_bottom = 116.0
 scale = Vector2(1.4, 1.4)
-theme_override_styles/normal = SubResource("StyleBoxEmpty_7467j")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_7467j")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_7467j")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_7467j")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_7467j")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_7467j")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_7467j")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_7467j")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_7467j")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_7467j")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_7467j")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_7467j")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_7467j")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_7467j")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_7467j")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_7467j")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7467j")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_7467j")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_7467j")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_7467j")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7467j")
 icon = ExtResource("6_loo7a")
 
 [node name="BackButton" type="Button" parent="."]
@@ -161,17 +176,17 @@ offset_top = 245.0
 offset_right = 60.0
 offset_bottom = 261.0
 scale = Vector2(1.4, 1.4)
-theme_override_styles/normal = SubResource("StyleBoxEmpty_2x1g0")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_2x1g0")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_2x1g0")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_2x1g0")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_2x1g0")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_2x1g0")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_2x1g0")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_2x1g0")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_2x1g0")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_2x1g0")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_2x1g0")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_2x1g0")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_2x1g0")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_2x1g0")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_2x1g0")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_2x1g0")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_2x1g0")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_2x1g0")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2x1g0")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_2x1g0")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_2x1g0")
 icon = ExtResource("10_7467j")
 
 [node name="Round_Buttons" type="Node2D" parent="."]
@@ -184,80 +199,80 @@ offset_top = 75.0
 offset_right = 62.0
 offset_bottom = 91.0
 scale = Vector2(1.4, 1.4)
-theme_override_styles/normal = SubResource("StyleBoxEmpty_yxkem")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_yxkem")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_yxkem")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_yxkem")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_yxkem")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_yxkem")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_yxkem")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_yxkem")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_yxkem")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_yxkem")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_yxkem")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_yxkem")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_yxkem")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_yxkem")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_yxkem")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_yxkem")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_yxkem")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_yxkem")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yxkem")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_yxkem")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_yxkem")
 icon = ExtResource("11_2x1g0")
 
 [node name="Round2Button" type="Button" parent="Round_Buttons"]
 visible = false
 texture_filter = 1
-offset_left = 100.0
+offset_left = 102.5
 offset_top = 75.0
-offset_right = 157.0
+offset_right = 159.5
 offset_bottom = 91.0
 scale = Vector2(1.4, 1.4)
-theme_override_styles/normal = SubResource("StyleBoxEmpty_6byu3")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_6byu3")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_6byu3")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_6byu3")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_6byu3")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_6byu3")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_6byu3")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_6byu3")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_6byu3")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_6byu3")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_6byu3")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_6byu3")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_6byu3")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_6byu3")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_6byu3")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_6byu3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6byu3")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_6byu3")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6byu3")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_6byu3")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6byu3")
 icon = ExtResource("12_pjscj")
 
 [node name="Round3Button" type="Button" parent="Round_Buttons"]
 visible = false
 texture_filter = 1
-offset_left = 195.0
+offset_left = 200.0
 offset_top = 75.0
-offset_right = 252.0
+offset_right = 257.0
 offset_bottom = 91.0
 scale = Vector2(1.4, 1.4)
-theme_override_styles/normal = SubResource("StyleBoxEmpty_leunp")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_leunp")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_leunp")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_leunp")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_leunp")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_leunp")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_leunp")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_leunp")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_leunp")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_leunp")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_leunp")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_leunp")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_leunp")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_leunp")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_leunp")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_leunp")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_leunp")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_leunp")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_leunp")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_leunp")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_leunp")
 icon = ExtResource("13_m7n2d")
 
 [node name="Round4Button" type="Button" parent="Round_Buttons"]
 visible = false
 texture_filter = 1
-offset_left = 290.0
+offset_left = 297.5
 offset_top = 75.0
-offset_right = 347.0
+offset_right = 354.5
 offset_bottom = 91.0
 scale = Vector2(1.4, 1.4)
-theme_override_styles/normal = SubResource("StyleBoxEmpty_h1v62")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_h1v62")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_h1v62")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_h1v62")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_h1v62")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_h1v62")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_h1v62")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_h1v62")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_h1v62")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_h1v62")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_h1v62")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_h1v62")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_h1v62")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_h1v62")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_h1v62")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_h1v62")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_h1v62")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_h1v62")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_h1v62")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_h1v62")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_h1v62")
 icon = ExtResource("14_65hh5")
 
 [node name="Round5Button" type="Button" parent="Round_Buttons"]
@@ -268,43 +283,123 @@ offset_top = 75.0
 offset_right = 452.0
 offset_bottom = 91.0
 scale = Vector2(1.4, 1.4)
-theme_override_styles/normal = SubResource("StyleBoxEmpty_7v4os")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_7v4os")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_7v4os")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_7v4os")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_7v4os")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_7v4os")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_7v4os")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_7v4os")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_7v4os")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_7v4os")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_7v4os")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_7v4os")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_7v4os")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_7v4os")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_7v4os")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_7v4os")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7v4os")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_7v4os")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_7v4os")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_7v4os")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7v4os")
 icon = ExtResource("12_riqfo")
 
 [node name="Round6Button" type="Button" parent="Round_Buttons"]
 visible = false
-offset_right = 8.0
-offset_bottom = 8.0
+texture_filter = 1
+offset_left = 5.0
+offset_top = 135.0
+offset_right = 62.0
+offset_bottom = 151.0
+scale = Vector2(1.4, 1.4)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bxv1r")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_bxv1r")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bxv1r")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_bxv1r")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_bxv1r")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_bxv1r")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_bxv1r")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_bxv1r")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_bxv1r")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_bxv1r")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bxv1r")
+icon = ExtResource("16_leunp")
 
 [node name="Round7Button" type="Button" parent="Round_Buttons"]
 visible = false
-offset_right = 8.0
-offset_bottom = 8.0
+texture_filter = 1
+offset_left = 102.5
+offset_top = 135.0
+offset_right = 159.5
+offset_bottom = 151.0
+scale = Vector2(1.4, 1.4)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ux20s")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_ux20s")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ux20s")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ux20s")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ux20s")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_ux20s")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ux20s")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_ux20s")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ux20s")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ux20s")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ux20s")
+icon = ExtResource("17_5hdia")
 
 [node name="Round8Button" type="Button" parent="Round_Buttons"]
 visible = false
-offset_right = 8.0
-offset_bottom = 8.0
+texture_filter = 1
+offset_left = 200.0
+offset_top = 135.0
+offset_right = 257.0
+offset_bottom = 151.0
+scale = Vector2(1.4, 1.4)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ke15f")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_ke15f")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ke15f")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ke15f")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ke15f")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_ke15f")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ke15f")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_ke15f")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ke15f")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ke15f")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ke15f")
+icon = ExtResource("18_iqn0u")
 
 [node name="Round9Button" type="Button" parent="Round_Buttons"]
 visible = false
-offset_right = 8.0
-offset_bottom = 8.0
+texture_filter = 1
+offset_left = 297.5
+offset_top = 135.0
+offset_right = 354.5
+offset_bottom = 151.0
+scale = Vector2(1.4, 1.4)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_311ux")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_311ux")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_311ux")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_311ux")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_311ux")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_311ux")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_311ux")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_311ux")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_311ux")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_311ux")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_311ux")
+icon = ExtResource("19_iqn0u")
 
 [node name="UnlimitedRoundButton" type="Button" parent="Round_Buttons"]
 visible = false
-offset_right = 8.0
-offset_bottom = 8.0
+texture_filter = 1
+offset_left = 395.0
+offset_top = 135.0
+offset_right = 452.0
+offset_bottom = 151.0
+scale = Vector2(1.4, 1.4)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pnils")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_pnils")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_pnils")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_pnils")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_pnils")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_pnils")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_pnils")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_pnils")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_pnils")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_pnils")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pnils")
+icon = ExtResource("20_3u44c")
 
 [node name="Difficulty_Buttons" type="Node2D" parent="."]
 
@@ -316,17 +411,17 @@ offset_top = 100.0
 offset_right = 112.0
 offset_bottom = 116.0
 scale = Vector2(1.4, 1.4)
-theme_override_styles/normal = SubResource("StyleBoxEmpty_5hdia")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_5hdia")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_5hdia")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_5hdia")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_5hdia")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_5hdia")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_5hdia")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_5hdia")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_5hdia")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_5hdia")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_5hdia")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_5hdia")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_5hdia")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_5hdia")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_5hdia")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_5hdia")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5hdia")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_5hdia")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5hdia")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_5hdia")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5hdia")
 icon = ExtResource("16_6byu3")
 
 [node name="NormalButton" type="Button" parent="Difficulty_Buttons"]
@@ -337,17 +432,17 @@ offset_top = 100.0
 offset_right = 256.0
 offset_bottom = 116.0
 scale = Vector2(1.4, 1.4)
-theme_override_styles/normal = SubResource("StyleBoxEmpty_iqn0u")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_iqn0u")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_iqn0u")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_iqn0u")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_iqn0u")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_iqn0u")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_iqn0u")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_iqn0u")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_iqn0u")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_iqn0u")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_iqn0u")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_iqn0u")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_iqn0u")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_iqn0u")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_iqn0u")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_iqn0u")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_iqn0u")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_iqn0u")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_iqn0u")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_iqn0u")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_iqn0u")
 icon = ExtResource("17_leunp")
 
 [node name="HardButton" type="Button" parent="Difficulty_Buttons"]
@@ -358,17 +453,17 @@ offset_top = 100.0
 offset_right = 407.0
 offset_bottom = 116.0
 scale = Vector2(1.4, 1.4)
-theme_override_styles/normal = SubResource("StyleBoxEmpty_3u44c")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_3u44c")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_3u44c")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_3u44c")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_3u44c")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_3u44c")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_3u44c")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_3u44c")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_3u44c")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_3u44c")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_3u44c")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_3u44c")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_3u44c")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_3u44c")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_3u44c")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_3u44c")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3u44c")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_3u44c")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_3u44c")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_3u44c")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3u44c")
 icon = ExtResource("18_h1v62")
 
 [node name="Settings_Buttons" type="Node2D" parent="."]
@@ -409,6 +504,34 @@ volume_db = -7.0
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="mouse_entered" from="Round_Buttons/Round1Button" to="." method="_on_round_1_button_mouse_entered"]
 [connection signal="mouse_exited" from="Round_Buttons/Round1Button" to="." method="_on_round_1_button_mouse_exited"]
+[connection signal="pressed" from="Round_Buttons/Round1Button" to="." method="_on_round_1_button_pressed"]
+[connection signal="mouse_entered" from="Round_Buttons/Round2Button" to="." method="_on_round_2_button_mouse_entered"]
+[connection signal="mouse_exited" from="Round_Buttons/Round2Button" to="." method="_on_round_2_button_mouse_exited"]
+[connection signal="pressed" from="Round_Buttons/Round2Button" to="." method="_on_round_2_button_pressed"]
+[connection signal="mouse_entered" from="Round_Buttons/Round3Button" to="." method="_on_round_3_button_mouse_entered"]
+[connection signal="mouse_exited" from="Round_Buttons/Round3Button" to="." method="_on_round_3_button_mouse_exited"]
+[connection signal="pressed" from="Round_Buttons/Round3Button" to="." method="_on_round_3_button_pressed"]
+[connection signal="mouse_entered" from="Round_Buttons/Round4Button" to="." method="_on_round_4_button_mouse_entered"]
+[connection signal="mouse_exited" from="Round_Buttons/Round4Button" to="." method="_on_round_4_button_mouse_exited"]
+[connection signal="pressed" from="Round_Buttons/Round4Button" to="." method="_on_round_4_button_pressed"]
+[connection signal="mouse_entered" from="Round_Buttons/Round5Button" to="." method="_on_round_5_button_mouse_entered"]
+[connection signal="mouse_exited" from="Round_Buttons/Round5Button" to="." method="_on_round_5_button_mouse_exited"]
+[connection signal="pressed" from="Round_Buttons/Round5Button" to="." method="_on_round_5_button_pressed"]
+[connection signal="mouse_entered" from="Round_Buttons/Round6Button" to="." method="_on_round_6_button_mouse_entered"]
+[connection signal="mouse_exited" from="Round_Buttons/Round6Button" to="." method="_on_round_6_button_mouse_exited"]
+[connection signal="pressed" from="Round_Buttons/Round6Button" to="." method="_on_round_6_button_pressed"]
+[connection signal="mouse_entered" from="Round_Buttons/Round7Button" to="." method="_on_round_7_button_mouse_entered"]
+[connection signal="mouse_exited" from="Round_Buttons/Round7Button" to="." method="_on_round_7_button_mouse_exited"]
+[connection signal="pressed" from="Round_Buttons/Round7Button" to="." method="_on_round_7_button_pressed"]
+[connection signal="mouse_entered" from="Round_Buttons/Round8Button" to="." method="_on_round_8_button_mouse_entered"]
+[connection signal="mouse_exited" from="Round_Buttons/Round8Button" to="." method="_on_round_8_button_mouse_exited"]
+[connection signal="pressed" from="Round_Buttons/Round8Button" to="." method="_on_round_8_button_pressed"]
+[connection signal="mouse_entered" from="Round_Buttons/Round9Button" to="." method="_on_round_9_button_mouse_entered"]
+[connection signal="mouse_exited" from="Round_Buttons/Round9Button" to="." method="_on_round_9_button_mouse_exited"]
+[connection signal="pressed" from="Round_Buttons/Round9Button" to="." method="_on_round_9_button_pressed"]
+[connection signal="mouse_entered" from="Round_Buttons/UnlimitedRoundButton" to="." method="_on_unlimited_round_button_mouse_entered"]
+[connection signal="mouse_exited" from="Round_Buttons/UnlimitedRoundButton" to="." method="_on_unlimited_round_button_mouse_exited"]
+[connection signal="pressed" from="Round_Buttons/UnlimitedRoundButton" to="." method="_on_unlimited_round_button_pressed"]
 [connection signal="mouse_entered" from="Difficulty_Buttons/EasyButton" to="." method="_on_easy_button_mouse_entered"]
 [connection signal="mouse_exited" from="Difficulty_Buttons/EasyButton" to="." method="_on_easy_button_mouse_exited"]
 [connection signal="pressed" from="Difficulty_Buttons/EasyButton" to="." method="_on_easy_button_pressed"]
