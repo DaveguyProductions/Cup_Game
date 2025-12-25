@@ -2,7 +2,7 @@ extends Node2D
 ####### NOTES ########
 # This is an area to write down the work I want to do next time I log in
 #
-# FIX MENU BUTTONS, I DONT THINK WE NEED TO CHECK A BOOL IF WE ARE DOING AN INT VAL PER SCREEN
+#FIX OPENING TRANSITION RAHHHHHHHHHHHHHHHHHH
 #
 #
 #
@@ -14,8 +14,6 @@ extends Node2D
 #
 #
 #
-#
-
 
 # -------VARIABLES-------
 
@@ -27,6 +25,9 @@ var diff_hidden = true
 
 # Checks if the round buttons are hidden
 var rounds_hidden = true
+
+# Checks if we are off the opening
+var opening = true
 
 # Checks the difficulty value. Easy = 1. Normal = 2. Hard = 3.
 var difficulty = 0 
@@ -140,45 +141,137 @@ func _on_back_button_pressed() -> void:
 		hide_rounds()
 		show_diff()
 		$CupsRedMenu.visible = true
-		
-	
-	
+
 # -------ROUND ONE BUTTON LOGIC-------
 func _on_round_1_button_mouse_entered() -> void:
 	$Round_Buttons/Round1Button.icon = ResourceLoader.load("res://Assets/Art/Menu/Rounds/One_Round_B2.png")
 	$Audio/ButtonHover.play()
-	
 
 func _on_round_1_button_mouse_exited() -> void:
 	$Round_Buttons/Round1Button.icon = ResourceLoader.load("res://Assets/Art/Menu/Rounds/One_Round_B1.png")
 
-# -------ROUND TWO BUTTON LOGIC-------
+func _on_round_1_button_pressed() -> void:
+	rounds = 1
+	to_game_scene()
 
+# -------ROUND TWO BUTTON LOGIC-------
+func _on_round_2_button_mouse_entered() -> void:
+	$Round_Buttons/Round2Button.icon = ResourceLoader.load("res://Assets/Art/Menu/Rounds/Two_Round_B2.png")
+	$Audio/ButtonHover.play()
+
+func _on_round_2_button_mouse_exited() -> void:
+	$Round_Buttons/Round2Button.icon = ResourceLoader.load("res://Assets/Art/Menu/Rounds/Two_Round_B1.png")
+
+func _on_round_2_button_pressed() -> void:
+	rounds = 2
+	get_tree().change_scene_to_file("res://Scenes/main_game.tscn")
+	
 # -------ROUND THREE BUTTON LOGIC-------
+func _on_round_3_button_mouse_entered() -> void:
+	$Round_Buttons/Round3Button.icon = ResourceLoader.load("res://Assets/Art/Menu/Rounds/Three_Round_B2.png")
+	$Audio/ButtonHover.play()
+
+func _on_round_3_button_mouse_exited() -> void:
+	$Round_Buttons/Round3Button.icon = ResourceLoader.load("res://Assets/Art/Menu/Rounds/Three_Round_B1.png")
+
+func _on_round_3_button_pressed() -> void:
+	rounds = 3
+	get_tree().change_scene_to_file("res://Scenes/main_game.tscn")
 
 # -------ROUND FOUR BUTTON LOGIC-------
+func _on_round_4_button_mouse_entered() -> void:
+	$Round_Buttons/Round4Button.icon = ResourceLoader.load("res://Assets/Art/Menu/Rounds/Four_Round_B2.png")
+	$Audio/ButtonHover.play()
+
+func _on_round_4_button_mouse_exited() -> void:
+	$Round_Buttons/Round4Button.icon = ResourceLoader.load("res://Assets/Art/Menu/Rounds/Four_Round_B1.png")
+
+func _on_round_4_button_pressed() -> void:
+	rounds = 4
+	get_tree().change_scene_to_file("res://Scenes/main_game.tscn")
 
 # -------ROUND FIVE BUTTON LOGIC-------
+func _on_round_5_button_mouse_entered() -> void:
+	$Round_Buttons/Round5Button.icon = ResourceLoader.load("res://Assets/Art/Menu/Rounds/Five_Round_B2.png")
+	$Audio/ButtonHover.play()
+
+func _on_round_5_button_mouse_exited() -> void:
+	$Round_Buttons/Round5Button.icon = ResourceLoader.load("res://Assets/Art/Menu/Rounds/Five_Round_B1.png")
+
+func _on_round_5_button_pressed() -> void:
+	rounds = 5
+	get_tree().change_scene_to_file("res://Scenes/main_game.tscn")
 
 # -------ROUND SIX BUTTON LOGIC-------
+func _on_round_6_button_mouse_entered() -> void:
+	$Round_Buttons/Round6Button.icon = ResourceLoader.load("res://Assets/Art/Menu/Rounds/Six_Round_B2.png")
+	$Audio/ButtonHover.play()
+
+func _on_round_6_button_mouse_exited() -> void:
+	$Round_Buttons/Round6Button.icon = ResourceLoader.load("res://Assets/Art/Menu/Rounds/Six_Round_B1.png")
+
+func _on_round_6_button_pressed() -> void:
+	rounds = 6
+	get_tree().change_scene_to_file("res://Scenes/main_game.tscn")
 
 # -------ROUND SEVEN BUTTON LOGIC-------
+func _on_round_7_button_mouse_entered() -> void:
+	$Round_Buttons/Round7Button.icon = ResourceLoader.load("res://Assets/Art/Menu/Rounds/Seven_Round_B2.png")
+	$Audio/ButtonHover.play()
+
+func _on_round_7_button_mouse_exited() -> void:
+	$Round_Buttons/Round7Button.icon = ResourceLoader.load("res://Assets/Art/Menu/Rounds/Seven_Round_B1.png")
+
+func _on_round_7_button_pressed() -> void:
+	rounds = 7
+	get_tree().change_scene_to_file("res://Scenes/main_game.tscn")
 
 # -------ROUND EIGHT BUTTON LOGIC-------
+func _on_round_8_button_mouse_entered() -> void:
+	$Round_Buttons/Round8Button.icon = ResourceLoader.load("res://Assets/Art/Menu/Rounds/Eight_Round_B2.png")
+	$Audio/ButtonHover.play()
+
+func _on_round_8_button_mouse_exited() -> void:
+	$Round_Buttons/Round8Button.icon = ResourceLoader.load("res://Assets/Art/Menu/Rounds/Eight_Round_B1.png")
+
+func _on_round_8_button_pressed() -> void:
+	rounds = 8
+	get_tree().change_scene_to_file("res://Scenes/main_game.tscn")
 
 # -------ROUND NINE BUTTON LOGIC-------
+func _on_round_9_button_mouse_entered() -> void:
+	$Round_Buttons/Round9Button.icon = ResourceLoader.load("res://Assets/Art/Menu/Rounds/Nine_Round_B2.png")
+	$Audio/ButtonHover.play()
+
+func _on_round_9_button_mouse_exited() -> void:
+	$Round_Buttons/Round9Button.icon = ResourceLoader.load("res://Assets/Art/Menu/Rounds/Nine_Round_B1.png")
+
+func _on_round_9_button_pressed() -> void:
+	rounds = 9
+	get_tree().change_scene_to_file("res://Scenes/main_game.tscn")
 
 # -------ROUND UNLIMITED BUTTON LOGIC-------
+func _on_unlimited_round_button_mouse_entered() -> void:
+	$Round_Buttons/UnlimitedRoundButton.icon = ResourceLoader.load("res://Assets/Art/Menu/Rounds/Unlimited_Round_B2.png")
+	$Audio/ButtonHover.play()
 
+func _on_unlimited_round_button_mouse_exited() -> void:
+	$Round_Buttons/UnlimitedRoundButton.icon = ResourceLoader.load("res://Assets/Art/Menu/Rounds/Unlimited_Round_B1.png")
+
+func _on_unlimited_round_button_pressed() -> void:
+	rounds = 9223372036854775807
+	get_tree().change_scene_to_file("res://Scenes/main_game.tscn")
 
 # ------- FUNCTIONS -------
 
 # ------- TRANSITION FUNCTIONS -------
 func _on_canvas_layer_transition() -> void:
-	$DaveGuyProductionsSs.visible = false
-	$CanvasLayer/ColorRect.visible = false
-	$Audio/Menu_Music.play()
-	menu_passed = true
+	if opening == true:
+		$DaveGuyProductionsSs.visible = false
+		$CanvasLayer/ColorRect.visible = false
+		$Audio/Menu_Music.play()
+		menu_passed = true
+		opening = false
 
 func _input(event): 
 	if event.is_action_pressed("ui_cancel") and menu_passed == false:
@@ -187,6 +280,10 @@ func _input(event):
 		$Audio/Menu_Music.play()
 		$Audio/DaveGuyFanfare2.stop()
 		menu_passed = true
+
+func to_game_scene():
+	get_node("CanvasLayer").fade_to_black()
+	
 
 #------- BUTTON VISIBILITY FUNCTIONS -------
 func show_rounds():
@@ -246,3 +343,4 @@ func to_diff_screen():
 	show_rounds()
 	$CupsRedMenu.visible = false
 	$Audio/ButtonClick.play()
+	
