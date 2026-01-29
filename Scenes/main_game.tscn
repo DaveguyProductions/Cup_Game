@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://cr17sxy7430un"]
+[gd_scene load_steps=6 format=3 uid="uid://cr17sxy7430un"]
 
+[ext_resource type="Script" uid="uid://cpmjofv0uhhi3" path="res://Scripts/GamePlay/main_game.gd" id="1_mgc0q"]
 [ext_resource type="Texture2D" uid="uid://dkc1nyebqjedu" path="res://Assets/Art/Backgrounds/Background_Blue.png" id="1_pu3va"]
 [ext_resource type="Texture2D" uid="uid://e6v71tfav4xl" path="res://Assets/Art/Tables/Table_Brown.png" id="2_0e3vx"]
 [ext_resource type="PackedScene" uid="uid://df0cfgnfgrqds" path="res://Scenes/cups_gameplay.tscn" id="3_0e3vx"]
+[ext_resource type="PackedScene" uid="uid://d3xwe6yop3v3q" path="res://Scenes/countdown.tscn" id="4_6j5ir"]
 
 [node name="Main_Game" type="Node2D"]
+script = ExtResource("1_mgc0q")
 
 [node name="BackgroundBlue" type="Sprite2D" parent="."]
 z_index = 1
@@ -17,4 +20,9 @@ position = Vector2(240, 135)
 texture = ExtResource("2_0e3vx")
 
 [node name="Cups_Gameplay" parent="." instance=ExtResource("3_0e3vx")]
-position = Vector2(250, 189)
+position = Vector2(244, 189)
+script = null
+
+[node name="Countdown" parent="." instance=ExtResource("4_6j5ir")]
+offset = Vector2(1, 0)
+transform = Transform2D(1, 0, 0, 1, 1, 0)

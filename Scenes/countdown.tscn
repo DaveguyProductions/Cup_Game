@@ -1,0 +1,347 @@
+[gd_scene load_steps=12 format=3 uid="uid://d3xwe6yop3v3q"]
+
+[ext_resource type="Texture2D" uid="uid://l7xwc7q5m1ax" path="res://Assets/Art/Menu/Gameplay/Countdown_GO.png" id="2_2gjdc"]
+[ext_resource type="Texture2D" uid="uid://dgaohwu6bgsqo" path="res://Assets/Art/Menu/Gameplay/Countdown_3.png" id="2_cdak2"]
+[ext_resource type="Texture2D" uid="uid://dchv6g3kckati" path="res://Assets/Art/Menu/Gameplay/Countdown_1.png" id="2_rya2y"]
+[ext_resource type="Texture2D" uid="uid://b6jpyqx2epo25" path="res://Assets/Art/Menu/Gameplay/Countdown_2.png" id="3_2gjdc"]
+[ext_resource type="AudioStream" uid="uid://c68na8stooa88" path="res://Assets/Sounds/Countdown_3.mp3" id="6_3ch08"]
+[ext_resource type="AudioStream" uid="uid://blprxy1gidh17" path="res://Assets/Sounds/Countdown_2.mp3" id="7_f6wcs"]
+[ext_resource type="AudioStream" uid="uid://3yfprayxpb8a" path="res://Assets/Sounds/Countdown_1.mp3" id="8_588ll"]
+[ext_resource type="AudioStream" uid="uid://dk8r5qa5qxud6" path="res://Assets/Sounds/Countdown_GO.mp3" id="9_mkbsx"]
+
+[sub_resource type="Animation" id="Animation_jdl17"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Asset Container/Countdown3:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Asset Container/Countdown3:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Asset Container/Countdown2:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Asset Container/Countdown2:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Asset Container/Countdown2:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Asset Container/Countdown1:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Asset Container/Countdown1:self_modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Asset Container/Countdown1:scale")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Asset Container/CountdownGo:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Asset Container/CountdownGo:scale")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Asset Container/CountdownGo:self_modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_acgio"]
+resource_name = "Countdown_3_fadeout"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Asset Container/Countdown3:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Asset Container/Countdown3:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.5, 1.5)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Asset Container/Countdown2:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Asset Container/Countdown2:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Asset Container/Countdown2:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(1, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.5, 1.5)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Asset Container/Countdown1:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Asset Container/Countdown1:self_modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(2, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Asset Container/Countdown1:scale")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(2, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.5, 1.5)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Asset Container/CountdownGo:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Asset Container/CountdownGo:scale")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(3, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.5, 1.5)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Asset Container/CountdownGo:self_modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(3, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/11/type = "audio"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Asset Container/Audio")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"clips": [{
+"end_offset": 2.6699994,
+"start_offset": 0.0,
+"stream": ExtResource("6_3ch08")
+}, {
+"end_offset": 2.5,
+"start_offset": 0.18000004,
+"stream": ExtResource("7_f6wcs")
+}, {
+"end_offset": 2.3399994,
+"start_offset": 0.40000004,
+"stream": ExtResource("8_588ll")
+}, {
+"end_offset": 2.1299999,
+"start_offset": 0.5899999,
+"stream": ExtResource("9_mkbsx")
+}],
+"times": PackedFloat32Array(0, 0.98, 2, 3)
+}
+tracks/11/use_blend = true
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jdl17"]
+_data = {
+&"Countdown": SubResource("Animation_acgio"),
+&"RESET": SubResource("Animation_jdl17")
+}
+
+[node name="Countdown" type="CanvasLayer"]
+
+[node name="Asset Container" type="CanvasLayer" parent="."]
+
+[node name="CountdownGo" type="Sprite2D" parent="Asset Container"]
+texture_filter = 1
+position = Vector2(245, 50)
+texture = ExtResource("2_2gjdc")
+
+[node name="Countdown1" type="Sprite2D" parent="Asset Container"]
+texture_filter = 1
+position = Vector2(250, 50)
+texture = ExtResource("2_rya2y")
+
+[node name="Countdown2" type="Sprite2D" parent="Asset Container"]
+texture_filter = 1
+position = Vector2(245, 50)
+texture = ExtResource("3_2gjdc")
+
+[node name="Countdown3" type="Sprite2D" parent="Asset Container"]
+texture_filter = 1
+position = Vector2(245, 50)
+texture = ExtResource("2_cdak2")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Asset Container"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_jdl17")
+}
+autoplay = "Countdown"
+
+[node name="Audio" type="AudioStreamPlayer2D" parent="Asset Container"]

@@ -469,28 +469,26 @@ icon = ExtResource("18_h1v62")
 [node name="Settings_Buttons" type="Node2D" parent="."]
 visible = false
 
-[node name="Music" type="AudioStreamPlayer2D" parent="."]
+[node name="Audio" type="AudioStreamPlayer2D" parent="."]
 
-[node name="DaveGuyFanfare2" type="AudioStreamPlayer" parent="Music"]
+[node name="DaveGuyFanfare2" type="AudioStreamPlayer" parent="Audio"]
 stream = ExtResource("10_8e205")
 autoplay = true
 
-[node name="Menu_Music" type="AudioStreamPlayer2D" parent="Music"]
+[node name="Menu_Music" type="AudioStreamPlayer2D" parent="Audio"]
 position = Vector2(1, 1)
 stream = ExtResource("10_loo7a")
 volume_db = 6.0
 parameters/looping = true
 
-[node name="CanvasLayer" parent="." instance=ExtResource("14_7467j")]
-
-[node name="Sounds" type="AudioStreamPlayer2D" parent="."]
-
-[node name="ButtonClick" type="AudioStreamPlayer" parent="Sounds"]
+[node name="ButtonClick" type="AudioStreamPlayer" parent="Audio"]
 stream = ExtResource("11_fh7cp")
 
-[node name="ButtonHover" type="AudioStreamPlayer" parent="Sounds"]
+[node name="ButtonHover" type="AudioStreamPlayer" parent="Audio"]
 stream = ExtResource("13_8e205")
 volume_db = -7.0
+
+[node name="CanvasLayer" parent="." instance=ExtResource("14_7467j")]
 
 [connection signal="mouse_entered" from="PlayButton" to="." method="_on_button_mouse_entered"]
 [connection signal="mouse_exited" from="PlayButton" to="." method="_on_button_mouse_exited"]
@@ -543,5 +541,5 @@ volume_db = -7.0
 [connection signal="mouse_entered" from="Difficulty_Buttons/HardButton" to="." method="_on_hard_button_mouse_entered"]
 [connection signal="mouse_exited" from="Difficulty_Buttons/HardButton" to="." method="_on_hard_button_mouse_exited"]
 [connection signal="pressed" from="Difficulty_Buttons/HardButton" to="." method="_on_hard_button_pressed"]
-[connection signal="finished" from="Music/DaveGuyFanfare2" to="CanvasLayer" method="_on_dave_guy_fanfare_2_finished"]
+[connection signal="finished" from="Audio/DaveGuyFanfare2" to="CanvasLayer" method="_on_dave_guy_fanfare_2_finished"]
 [connection signal="transition" from="CanvasLayer" to="." method="_on_canvas_layer_transition"]
